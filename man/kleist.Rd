@@ -3,35 +3,33 @@
 \docType{data}
 \name{kleist}
 \alias{kleist}
-\alias{kleist_3d}
-\title{kleist atlas}
+\title{Kleist Atlas}
 \format{
-An object of class \code{brain_atlas} of length 4.
-
-An object of class \code{ggseg3d_atlas} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 4 rows and 4 columns.
+A \link[ggseg.formats:ggseg_atlas]{ggseg.formats::ggseg_atlas} object (cortical).
 }
 \usage{
-kleist
-
-kleist_3d
+data(kleist)
 }
 \description{
-A historical Kleist functional segregation atlas based on files
-released with  Pijnenburg et al., NeuroImage, 
-239, 2021, (\href{https://doi.org/10.1016/j.neuroimage.2021.118274}{DOI})
-Version 1; 15-01-2021.
+Brain atlas for the historical Kleist 1934 functional segregation with
+49 regions per hemisphere. Contains both 2D polygon geometry for
+\code{\link[ggseg:ggbrain]{ggseg::geom_brain()}} and 3D vertex indices for \code{\link[ggseg3d:ggseg3d]{ggseg3d::ggseg3d()}}.
+}
+\details{
+Based on supplementary materials of Pijnenburg et al., NeuroImage,
+239, 2021; Version 1; 15-01-2021.
 }
 \examples{
 data(kleist)
-data(kleist_3d)
+kleist
 }
 \references{
-Kleist K. (1934) Gehirnpathologie vornehmlich auf Grund der Kriegserfahrungen (Leipzig: Barth).
-    
-\itemize{
- \item{kleist}{ - kleist atlas}
- \item{kleist_3d}{ - kleist 3d mesh atlas}
+Kleist K. (1934) Gehirnpathologie vornehmlich auf Grund der
+Kriegserfahrungen (Leipzig: Barth).
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{Pijnenburg R, et al. (2021) NeuroImage, 239, 118274.
+\doi{10.1016/j.neuroimage.2021.118274}
+}\if{html}{\out{</div>}}
 }
-}
-\concept{ggseg_atlases ggseg3d_atlases}
+\concept{ggseg_atlases}
 \keyword{datasets}
