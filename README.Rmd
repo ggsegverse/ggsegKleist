@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 # ggsegKleist <img src='man/figures/logo.png' align="right" height="138.5" />
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/ggseg/ggsegKleist/workflows/R-CMD-check/badge.svg)](https://github.com/ggseg/ggsegKleist/actions)
+[![R-CMD-check](https://github.com/ggsegverse/ggsegKleist/workflows/R-CMD-check/badge.svg)](https://github.com/ggsegverse/ggsegKleist/actions)
 [![DOI](https://zenodo.org/badge/425006974.svg)](https://zenodo.org/badge/latestdoi/425006974)
 <!-- badges: end -->
 
@@ -26,7 +26,7 @@ This package contains the Kleist 1934 historical atlas of functional segregation
 
 Kleist K. (1934) Gehirnpathologie vornehmlich auf Grund der Kriegserfahrungen (Leipzig: Barth).
 
-To learn how to use these atlases, please look at the documentation for [ggseg](https://ggseg.github.io/ggseg/) and [ggseg3d](https://ggseg.github.io/ggseg3d).
+To learn how to use these atlases, please look at the documentation for [ggseg](https://ggsegverse.github.io/ggseg/) and [ggseg3d](https://ggsegverse.github.io/ggseg3d).
 
 ## Installation
 
@@ -34,7 +34,7 @@ You can install ggsegKleist from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("ggseg/ggsegKleist")
+remotes::install_github("ggsegverse/ggsegKleist")
 ```
 
 ## 2D plotting

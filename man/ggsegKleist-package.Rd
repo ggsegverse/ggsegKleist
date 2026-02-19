@@ -13,8 +13,8 @@ Historical Kleist functional segregation atlas for the 'ggseg' ecosystem. Provid
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/ggseg/ggsegKleist}
-  \item Report bugs at \url{https://github.com/ggseg/ggsegKleist/issues}
+  \item \url{https://github.com/ggsegverse/ggsegKleist}
+  \item Report bugs at \url{https://github.com/ggsegverse/ggsegKleist/issues}
 }
 
 }
