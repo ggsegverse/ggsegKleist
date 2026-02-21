@@ -1,5 +1,4 @@
 library(testthat)
+library(ggsegKleist)
 
 test_check("ggsegKleist")
-
-# covr::zero_coverage(covr::package_coverage("."))

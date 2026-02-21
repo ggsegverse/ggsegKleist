@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/ggseg/ggsegKleist/workflows/R-CMD-check/badge.svg)](https://github.com/ggseg/ggsegKleist/actions)
+[![R-CMD-check](https://github.com/ggsegverse/ggsegKleist/workflows/R-CMD-check/badge.svg)](https://github.com/ggsegverse/ggsegKleist/actions)
 [![DOI](https://zenodo.org/badge/425006974.svg)](https://zenodo.org/badge/latestdoi/425006974)
 <!-- badges: end -->
 
@@ -19,18 +19,18 @@ Kleist K. (1934) Gehirnpathologie vornehmlich auf Grund der
 Kriegserfahrungen (Leipzig: Barth).
 
 To learn how to use these atlases, please look at the documentation for
-[ggseg](https://ggseg.github.io/ggseg/) and
-[ggseg3d](https://ggseg.github.io/ggseg3d)
+[ggseg](https://ggsegverse.github.io/ggseg/) and
+[ggseg3d](https://ggsegverse.github.io/ggseg3d)
 
 ## Installation
 
 We recommend installing the ggseg-atlases through the ggseg
-[r-universe](https://ggseg.r-universe.dev/ui#builds):
+[r-universe](https://ggsegverse.r-universe.dev/ui#builds):
 
 ``` r
 # Enable this universe
 options(repos = c(
-    ggseg = 'https://ggseg.r-universe.dev',
+    ggsegverse = 'https://ggsegverse.r-universe.dev',
     CRAN = 'https://cloud.r-project.org'))
 
 # Install some packages
@@ -42,7 +42,7 @@ You can install the released version of ggsegKleist from
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("ggseg/ggsegKleist")
+remotes::install_github("ggsegverse/ggsegKleist")
 ```
 
 ``` r
