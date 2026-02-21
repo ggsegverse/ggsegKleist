@@ -10,7 +10,6 @@ Description: Historical Kleist functional segregation atlas for the 'ggseg'
     geometry and 3D vertex indices, for use with 'ggseg' and 'ggseg3d'.
 License: CC BY 4.0
 Encoding: UTF-8
-LazyData: true
 Depends:
     R (>= 3.5),
     ggseg.formats

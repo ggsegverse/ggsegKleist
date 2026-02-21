@@ -46,12 +46,12 @@ library(ggplot2)
 
 ggplot() +
   geom_brain(
-    atlas = kleist,
+    atlas = kleist(),
     mapping = aes(fill = label),
     position = position_brain(hemi ~ view),
     show.legend = FALSE
   ) +
-  scale_fill_manual(values = kleist$palette, na.value = "grey") +
+  scale_fill_manual(values = kleist()$palette, na.value = "grey") +
   theme_void()
 ```
 
@@ -60,13 +60,13 @@ ggplot() +
 ```{r "noneval", eval=FALSE}
 library(ggseg3d)
 
-ggseg3d(atlas = kleist) |>
+ggseg3d(atlas = kleist()) |>
   add_glassbrain() |>
   pan_camera("right lateral")
 ```
 
 ```{r "orca", include=FALSE}
-p <- ggseg3d::ggseg3d(atlas = kleist) |>
+p <- ggseg3d::ggseg3d(atlas = kleist()) |>
   ggseg3d::add_glassbrain(hemisphere = "left") |>
   ggseg3d::pan_camera("right lateral") |>
   plotly::add_annotations(text = "Screen capture",

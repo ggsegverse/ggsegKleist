@@ -7,10 +7,6 @@
 #' Based on supplementary materials of Pijnenburg et al., NeuroImage,
 #' 239, 2021; Version 1; 15-01-2021.
 #'
-#' @docType data
-#' @name kleist
-#' @usage data(kleist)
-#' @keywords datasets
 #' @family ggseg_atlases
 #'
 #' @references Kleist K. (1934) Gehirnpathologie vornehmlich auf Grund der
@@ -19,8 +15,8 @@
 #'     Pijnenburg R, et al. (2021) NeuroImage, 239, 118274.
 #'     \doi{10.1016/j.neuroimage.2021.118274}
 #'
-#' @format A [ggseg.formats::ggseg_atlas] object (cortical).
+#' @return A [ggseg.formats::ggseg_atlas] object (cortical).
+#' @export
 #' @examples
-#' data(kleist)
-#' kleist
-"kleist"
+#' kleist()
+kleist <- function() .kleist
