@@ -1,21 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/kleist.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://ggsegverse.github.io/ggsegKleist/404.html</loc></url>
+<url><loc>https://ggsegverse.github.io/ggsegKleist/LICENSE.html</loc></url>
+<url><loc>https://ggsegverse.github.io/ggsegKleist/authors.html</loc></url>
+<url><loc>https://ggsegverse.github.io/ggsegKleist/copilot-instructions.html</loc></url>
+<url><loc>https://ggsegverse.github.io/ggsegKleist/index.html</loc></url>
+<url><loc>https://ggsegverse.github.io/ggsegKleist/news/index.html</loc></url>
+<url><loc>https://ggsegverse.github.io/ggsegKleist/reference/ggsegKleist-package.html</loc></url>
+<url><loc>https://ggsegverse.github.io/ggsegKleist/reference/index.html</loc></url>
+<url><loc>https://ggsegverse.github.io/ggsegKleist/reference/kleist.html</loc></url>
 </urlset>
+
