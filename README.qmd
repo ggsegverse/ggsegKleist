@@ -5,6 +5,7 @@ format: gfm
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r}
+#| label: setup
 #| include: false
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -41,6 +42,7 @@ remotes::install_github("ggsegverse/ggsegKleist")
 ## 2D plotting
 
 ```{r}
+#| label: 2d-plot
 #| fig-height: 7
 library(ggsegKleist)
 library(ggseg)
@@ -70,17 +72,14 @@ ggseg3d(atlas = kleist()) |>
 ```
 
 ```{r}
-#| label: orca
+#| label: 3d-snapshot
 #| include: false
-p <- ggseg3d::ggseg3d(atlas = kleist()) |>
-  ggseg3d::add_glassbrain(hemisphere = "left") |>
-  ggseg3d::pan_camera("right lateral") |>
-  plotly::add_annotations(text = "Screen capture",
-                          legendtitle = TRUE, showarrow = FALSE,
-                          font = list(color = "#000000b4",
-                                      family = "sans serif",
-                                      size = 50))
-snapshot_brain("man/figures/README-3d-plot.png")
+#| eval: !expr (file.exists(Sys.which("chrome")) || file.exists(Sys.which("chromium"))) && !nzchar(Sys.getenv("CI"))
+library(ggseg3d)
+
+ggseg3d(atlas = kleist()) |>
+  pan_camera("right lateral") |>
+  snapshot_brain("man/figures/README-3d-plot.png")
 ```
 
 ```{r}
