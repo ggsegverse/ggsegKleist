@@ -1,62 +1,37 @@
-# Create Kleist Atlas
+# Create Kleist Functional Segregation Atlas
 #
 # Recreates the kleist cortical atlas from the kleist
-# annotation on fsaverage5 using ggsegExtra.
+# annotation on fsaverage5 using ggseg.extra vertex projection pipeline.
 #
 # Requirements:
-#   - ggsegExtra package
-#   - ggseg.formats package
+#   - FreeSurfer installed with fsaverage5 subject
+#   - ggseg.extra (>= 2.0.0.9000)
+#   - ggseg.formats
 #
 # Run with: Rscript data-raw/make_atlas.R
 
-Sys.setenv(RGL_USE_NULL = TRUE)
-
-library(dplyr)
 library(ggseg.extra)
 library(ggseg.formats)
 
-options(freesurfer.verbose = FALSE)
-options(chromote.timeout = 120)
-future::plan(future::sequential)
-progressr::handlers("cli")
-progressr::handlers(global = TRUE)
+Sys.setenv(FREESURFER_HOME = "/Applications/freesurfer/7.4.1")
 
 annot_files <- file.path(
   here::here("data-raw", "fsaverage5"),
   c("lh.kleist.annot", "rh.kleist.annot")
 )
 
-for (f in annot_files) {
-  if (!file.exists(f)) {
-    cli::cli_abort("Annotation not found: {.path {f}}")
-  }
-}
-
-cli::cli_h1("Creating kleist cortical atlas")
-
-atlas_raw <- create_cortical_from_annotation(
+kleist <- create_cortical_from_annotation(
   input_annot = annot_files,
   atlas_name = "kleist",
   output_dir = "data-raw",
-  tolerance = 1,
-  smoothness = 2,
+  tolerance = 0,
   skip_existing = TRUE,
   cleanup = FALSE
-)
-
-atlas_raw <- atlas_raw |>
+) |>
   atlas_region_contextual("Unknown", "label")
 
-kleist <- atlas_raw
-
-cli::cli_alert_success("Atlas created with {nrow(kleist$core)} regions")
 print(kleist)
+plot(kleist)
 
-brain_pals <- stats::setNames(
-  list(kleist$palette),
-  kleist$atlas
-)
-save(brain_pals, file = here::here("R/sysdata.rda"), compress = "xz")
-
-usethis::use_data(kleist, overwrite = TRUE, compress = "xz")
-cli::cli_alert_success("Saved to data/kleist.rda")
+.kleist <- kleist
+usethis::use_data(.kleist, overwrite = TRUE, compress = "xz", internal = TRUE)
