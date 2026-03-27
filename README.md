@@ -1,10 +1,19 @@
 # ggsegKleist
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/ggsegverse/ggsegKleist/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ggsegverse/ggsegKleist/actions/workflows/R-CMD-check.yaml)
+[![r-universe](https://ggsegverse.r-universe.dev/badges/ggsegKleist)](https://ggsegverse.r-universe.dev/ggsegKleist)
+<!-- badges: end -->
+
 Kleist Atlas for the ggsegverse Ecosystem.
 
 ## Installation
 
 ``` r
+# From r-universe
+install.packages("ggsegKleist", repos = "https://ggsegverse.r-universe.dev")
+
+# From GitHub
 # install.packages("remotes")
 remotes::install_github("ggsegverse/ggsegKleist")
 ```
