@@ -20,4 +20,5 @@
 #' @export
 #' @examples
 #' kleist()
+#' plot(kleist())
 kleist <- function() .kleist
