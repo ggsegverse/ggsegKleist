@@ -10,14 +10,14 @@
 Source:
 [`DESCRIPTION`](https://github.com/ggsegverse/ggsegKleist/blob/main/DESCRIPTION)
 
-Mowinckel A (2026). *ggsegKleist: Kleist Atlas for the 'ggseg'
-Ecosystem*. R package version 2.0.0,
+Mowinckel A (2026). *ggsegKleist: Kleist Atlas for the 'ggsegverse'
+Ecosystem*. R package version 2.0.1,
 <https://github.com/ggsegverse/ggsegKleist>.
 
     @Manual{,
-      title = {ggsegKleist: Kleist Atlas for the 'ggseg' Ecosystem},
+      title = {ggsegKleist: Kleist Atlas for the 'ggsegverse' Ecosystem},
       author = {Athanasia Mo Mowinckel},
       year = {2026},
-      note = {R package version 2.0.0},
+      note = {R package version 2.0.1},
       url = {https://github.com/ggsegverse/ggsegKleist},
     }
