@@ -8,6 +8,7 @@
 #' 239, 2021; Version 1; 15-01-2021.
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Kleist K. (1934) Gehirnpathologie vornehmlich auf Grund der
 #'     Kriegserfahrungen (Leipzig: Barth).
